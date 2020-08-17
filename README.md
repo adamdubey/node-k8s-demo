@@ -34,3 +34,5 @@ npm run start
 
 - [Node.js](https://nodejs.org/)
 - [Express](https://expressjs.com/)
+- [Docker](https://www.docker.com/)
+- [Travis CI](https://travis-ci.org/dashboard)
