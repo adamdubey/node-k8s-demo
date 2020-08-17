@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t jigglybytez/node-k8s-demo .
+  - docker build -t jigglybytez/node-k8s-demo -f ./server/Dockerfile ./server
 
 after_success:
   - docker build -t jigglybytez/node-k8s-demo
