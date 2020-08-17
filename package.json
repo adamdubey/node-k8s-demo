@@ -10,7 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/adamdubey/node-k8s-demo.git"
   },
-  "keywords": [],
+  "keywords": [
+    "liatrio"
+  ],
   "author": "Adam Dubey",
   "license": "MIT",
   "bugs": {
