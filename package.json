@@ -1,0 +1,23 @@
+{
+  "name": "node-k8s-demo",
+  "version": "1.0.0",
+  "description": "Technical collaboration exercise.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamdubey/node-k8s-demo.git"
+  },
+  "keywords": [],
+  "author": "Adam Dubey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adamdubey/node-k8s-demo/issues"
+  },
+  "homepage": "https://github.com/adamdubey/node-k8s-demo#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
