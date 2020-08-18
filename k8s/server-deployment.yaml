@@ -6,11 +6,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      component: server
+      component: server-deployment
   template:
     metadata:
       labels:
-        component: server
+        component: server-deployment
     spec:
       containers:
         - name: server
