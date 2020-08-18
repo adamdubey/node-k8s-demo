@@ -56,3 +56,4 @@ kubectl apply -f server-node-port.yaml
 - [Docker](https://www.docker.com/)
 - [Travis CI](https://travis-ci.org/dashboard)
 - [Kubernetes](https://kubernetes.io/)
+- [Google Cloud](https://console.cloud.google.com)

@@ -9,7 +9,20 @@ app.get("/api/automate", (req, res) => {
   });
 });
 
+app.get("/ping", (req, res) => {
+  res.send("Pong!");
+});
+
+app.get("/status", (req, res) => {
+  res.send("OK");
+});
+
 // Dynamic Port mapping
+// protection wrapper for testing env
 const PORT = process.env.port || 5000;
-app.listen(PORT);
-console.log("Listening on port 5000");
+if (process.env.NODE_ENV !== "test") {
+  app.listen(PORT);
+}
+console.log(`Running on port 5000`);
+
+module.exports = app;

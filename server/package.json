@@ -4,7 +4,8 @@
   "description": "Technical collaboration exercise.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "NODE_ENV=test jest --forceExit"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,12 @@
   "homepage": "https://github.com/adamdubey/node-k8s-demo#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "jest": "^26.4.0",
+    "mocha": "^8.1.1",
+    "supertest": "^4.0.2"
   }
 }
