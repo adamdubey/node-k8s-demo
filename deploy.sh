@@ -10,4 +10,4 @@ docker push jigglybytez/node-k8s-demo:$SHA
 kubectl apply -f k8s
 
 # imperatively set latest image on each deployment
-kubectl set image deployments/server-deployment server=jigglybytez/node-k8s-demo:$SHA
+kubectl set image server-deployment server=jigglybytez/node-k8s-demo:$SHA
