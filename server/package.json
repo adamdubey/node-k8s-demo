@@ -13,7 +13,8 @@
   },
   "keywords": [
     "liatrio",
-    "ci-cd"
+    "ci-cd",
+    "k8s"
   ],
   "author": "Adam Dubey",
   "license": "MIT",
