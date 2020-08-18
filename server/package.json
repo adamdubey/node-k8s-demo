@@ -12,7 +12,8 @@
     "url": "git+https://github.com/adamdubey/node-k8s-demo.git"
   },
   "keywords": [
-    "liatrio"
+    "liatrio",
+    "ci-cd"
   ],
   "author": "Adam Dubey",
   "license": "MIT",
