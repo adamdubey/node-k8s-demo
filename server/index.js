@@ -9,11 +9,11 @@ app.get("/api/automate", (req, res) => {
   });
 });
 
-app.get("/ping", (req, res) => {
+app.get("/api/ping", (req, res) => {
   res.send("Pong!");
 });
 
-app.get("/status", (req, res) => {
+app.get("/api/status", (req, res) => {
   res.send("OK");
 });
 
