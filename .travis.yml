@@ -15,7 +15,7 @@ before_install:
   - gcloud config set project node-k8s-demo
   - gcloud config set compute/zone us-central1-c
   - gcloud container clusters get-credentials k8s-cluster
-  - gcloud container clusters create --machine-type e2-medium --num-nodes 2 --zone us-central1-c --cluster-version latest k8s-cluster-2
+  - gcloud container clusters create k8s-prod-demo --zone us-central1-c
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker build -t jigglybytez/node-k8s-demo -f ./server/Dockerfile ./server
 script:
