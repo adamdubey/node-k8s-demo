@@ -17,6 +17,13 @@ app.get("/api/status", (req, res) => {
   res.send("OK");
 });
 
+app.get("/api/thanks", (req, res) => {
+  res.send({
+    message: "Thank you for inviting me to take on this challenge!",
+    timestamp: Date.now(),
+  });
+});
+
 // Dynamic Port mapping
 // protection wrapper for testing env
 const PORT = process.env.port || 5000;

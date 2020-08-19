@@ -2,6 +2,8 @@
 
 Technical collaboration exercise.
 
+---
+
 ## Quick Start
 
 1. Clone the project repo locally:
@@ -13,7 +15,7 @@ git clone https://github.com/adamdubey/node-k8s-demo.git
 2. Install package dependencies:
 
 ```
-cd
+cd server/
 npm install
 ```
 
@@ -29,6 +31,20 @@ npm run start
 # in Browser, goto localhost:5000/api/automate
 # in Postman, perform GET request to localhost:5000
 ```
+
+---
+
+## Testing
+
+There are several endpoint tests available. For localhost testing, simply start the server, and then in a seperate Terminal window execute the test suite:
+
+```
+cd server/
+npm run start
+npm run test
+```
+
+---
 
 ## Testing Kubernetes via localhost
 
@@ -49,6 +65,8 @@ kubectl apply -f server-node-port.yaml
 # in browser, goto <minikube-IP>:31515/api/automate
 ```
 
+---
+
 ## Deployments
 
 This is handled in two phases, with the first phase being entirely depending upon the CI Service. To get started, simply make a new branch, make some changes, push and open a new PR. Upon opening this PR, the CI Service will begin to build a "test" containerized application build, and additionally perform testing. If all the tests pass, then the PR can be merged...
@@ -62,6 +80,8 @@ Available routes for testing:
 /api/status     # a "pretend" status-check
 /api/ping       # Pong!
 ```
+
+---
 
 ## Technologies & Frameworks
 
