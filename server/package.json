@@ -14,7 +14,8 @@
   "keywords": [
     "liatrio",
     "ci-cd",
-    "k8s"
+    "k8s",
+    "dev-ops"
   ],
   "author": "Adam Dubey",
   "license": "MIT",
