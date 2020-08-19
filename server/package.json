@@ -15,7 +15,8 @@
     "liatrio",
     "ci-cd",
     "k8s",
-    "dev-ops"
+    "dev-ops",
+    "docker"
   ],
   "author": "Adam Dubey",
   "license": "MIT",
