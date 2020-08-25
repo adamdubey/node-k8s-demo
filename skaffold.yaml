@@ -1,0 +1,15 @@
+apiVersion: skaffold/v1beta2
+kind: Config
+build:
+  local:
+    push: false
+  artifacts:
+    - image: jigglybytez/node-k8s-demo
+      context: server
+      docker:
+        dockerfile: Dockerfile
+deploy:
+  kubectl:
+    manifests:
+      - k8s/server-deployment.yaml
+      - k8s/server-cluster-ip-service.yaml
